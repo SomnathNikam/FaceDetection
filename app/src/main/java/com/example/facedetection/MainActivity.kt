@@ -62,26 +62,26 @@ class MainActivity : AppCompatActivity() {
 
                  var resultText =" "
                 var i = 1
-//                for(face in faces){
-//                    resultText="Face Number $i" +
-//                            "\nSmile : ${face.smilingProbability?.times(100)}%" +
-//                            "\nLeft Eye Open : ${face?.leftEyeOpenProbability?.times(100)}%" +
-//                            "\nRight Eye Open : ${face?.rightEyeOpenProbability?.times(100)}%"
-//                    i++
-//                }
-//
-//                if (faces.isEmpty()){
-//                    Toast.makeText(this,"Face is empty",Toast.LENGTH_LONG).show()
-//                }
-//                else{
-//                    Toast.makeText(this,resultText,Toast.LENGTH_LONG).show()
-//                }
-//            }
-//            .addOnFailureListener{ e ->
-//
-//                Toast.makeText(this,"Nothing Error Occured",Toast.LENGTH_LONG).show()
-//            }
-//    }
-//}
+                for(face in faces){
+                    resultText="Face Number $i" +
+                            "\nSmile : ${face.smilingProbability?.times(100)}%" +
+                            "\nLeft Eye Open : ${face?.leftEyeOpenProbability?.times(100)}%" +
+                            "\nRight Eye Open : ${face?.rightEyeOpenProbability?.times(100)}%"
+                    i++
+                }
+
+                if (faces.isEmpty()){
+                    Toast.makeText(this,"Face is empty",Toast.LENGTH_LONG).show()
+                }
+                else{
+                    Toast.makeText(this,resultText,Toast.LENGTH_LONG).show()
+                }
+            }
+            .addOnFailureListener{ e ->
+
+                Toast.makeText(this,"Nothing Error Occured",Toast.LENGTH_LONG).show()
+            }
     }
+}
+    
 //}
