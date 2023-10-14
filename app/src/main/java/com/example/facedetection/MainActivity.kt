@@ -16,18 +16,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        var buttonCamera = findViewById<Button>(R.id.button)
-//
-//        buttonCamera.setOnClickListener {
-//            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-//
-//            if(intent.resolveActivity(packageManager) != null){
-//                startActivityForResult(intent,123)
-//            }else{
-//                Toast.makeText(this,"Oops",Toast.LENGTH_LONG).show()
-//            }
-//
-//        }
+        var buttonCamera = findViewById<Button>(R.id.button)
+
+        buttonCamera.setOnClickListener {
+            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+
+            if(intent.resolveActivity(packageManager) != null){
+                startActivityForResult(intent,123)
+            }else{
+                Toast.makeText(this,"Oops",Toast.LENGTH_LONG).show()
+            }
+
+        }
 //    }
 //
 //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
