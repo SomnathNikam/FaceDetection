@@ -28,19 +28,19 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-//    }
-//
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//
-//        if(requestCode==123 && resultCode== RESULT_OK){
-//            val extras = data?.extras
-//            val bitmap = extras?.get("data") as? Bitmap
-//            if (bitmap != null) {
-//                detectFace(bitmap)
-//            }
-//        }
-//    }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode==123 && resultCode== RESULT_OK){
+            val extras = data?.extras
+            val bitmap = extras?.get("data") as? Bitmap
+            if (bitmap != null) {
+                detectFace(bitmap)
+            }
+        }
+    }
 //    private fun detectFace(bitmap: Bitmap){
 //        // High-accuracy landmark detection and face classification
 //        val options = FaceDetectorOptions.Builder()
@@ -84,4 +84,4 @@ class MainActivity : AppCompatActivity() {
 //    }
 //}
     }
-}
+//}
