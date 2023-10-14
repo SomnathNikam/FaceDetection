@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
 ////            .setContourMode(FaceDetectorOptions.CONTOUR_MODE_ALL)
 ////            .build()
 //
-//        val detector = FaceDetection.getClient(options)
-//        val image = InputImage.fromBitmap(bitmap, 0)
-//
-//        val result = detector.process(image)
-//            .addOnSuccessListener{ faces ->
-//
-//                 var resultText =" "
-//                var i = 1
+        val detector = FaceDetection.getClient(options)
+        val image = InputImage.fromBitmap(bitmap, 0)
+
+        val result = detector.process(image)
+            .addOnSuccessListener{ faces ->
+
+                 var resultText =" "
+                var i = 1
 //                for(face in faces){
 //                    resultText="Face Number $i" +
 //                            "\nSmile : ${face.smilingProbability?.times(100)}%" +
