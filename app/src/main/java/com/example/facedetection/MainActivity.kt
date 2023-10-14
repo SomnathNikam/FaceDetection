@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-//    private fun detectFace(bitmap: Bitmap){
-//        // High-accuracy landmark detection and face classification
-//        val options = FaceDetectorOptions.Builder()
-//            .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_ACCURATE)
-//            .setLandmarkMode(FaceDetectorOptions.LANDMARK_MODE_ALL)
-//            .setClassificationMode(FaceDetectorOptions.CLASSIFICATION_MODE_ALL)
-//            .build()
-//
+    private fun detectFace(bitmap: Bitmap){
+        // High-accuracy landmark detection and face classification
+        val options = FaceDetectorOptions.Builder()
+            .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_ACCURATE)
+            .setLandmarkMode(FaceDetectorOptions.LANDMARK_MODE_ALL)
+            .setClassificationMode(FaceDetectorOptions.CLASSIFICATION_MODE_ALL)
+            .build()
+
 //// Real-time contour detection
 ////        val realTimeOpts = FaceDetectorOptions.Builder()
 ////            .setContourMode(FaceDetectorOptions.CONTOUR_MODE_ALL)
